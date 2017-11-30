@@ -7,7 +7,7 @@ char *recebestr(FILE* fp, size_t size){
     size_t len = 0;
     str = (char*)realloc(NULL, sizeof(char)*size);
     if(!str)return str;
-    while(EOF!=(ch=fgetc(fp)) && ch != 'm'){
+    while(EOF!=(ch=fgetc(fp)) && ch != '.'){
         str[len++]=ch;
         if(len==size){
             str = (char*)realloc(str, sizeof(char)*(size+=16));
@@ -21,10 +21,13 @@ char *recebestr(FILE* fp, size_t size){
 
 int main(void){
     char *m;
-    printf("Informe sua string: ");
     m = recebestr(stdin, 10);
-    printf("%s\n", m);
+	FILE *arquivo;
+	arquivo = fopen("meutexto.txt", "w");
+	fprintf(arquivo, "%s",m);
+	fclose(arquivo);
 
     free(m);
+	getchar();
     return 0;
 }
