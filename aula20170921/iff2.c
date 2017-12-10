@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include <stdint.h>
 
-int main()
-int64_t x, fat=1;
-printf("Informe o numero: ");
-scanf("%i", &x);
+int main(){
 
-while(x>=1)
+float x, soma=0;
+int i;
+printf("Informe o numero: ");
+scanf("%f", &x);
+x=1/x;
+for(i=0;i<=729;i++)
 {
-	fat=fat*x;
-	x--;
+	soma=soma+x;
 }
-printf("\nFatorial: %i \n", fat);
+printf("\n%.15f\n", soma);
 return 0;
 }

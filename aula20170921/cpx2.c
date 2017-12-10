@@ -1,4 +1,3 @@
-#include <iostream>
 #include <stdio.h>
 #include <complex.h>
 
@@ -9,7 +8,6 @@ printf("Informe um complexo:");
 scanf("%lf%lf", &a,&x);
 z=a + x*I;
 result=conj(z)*z;
-printf("A soma dos complexos e: %lf", result);
-system("pause");
+printf("%lf", result);
 return 0;
 }

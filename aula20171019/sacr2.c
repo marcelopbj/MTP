@@ -8,10 +8,10 @@ int dado() {
 
 int main() {
     srand(time(0));
-    int cont=0, soma;
+    int cont=0, soma, i;
 	while(cont<3){
 		soma=0;
-		for (int i=0; i<=5;i++)
+		for (i=0; i<=5;i++)
 			soma+=dado();
 		if(soma>=18 && soma<=23){
 			printf("Sua soma e: %d\nVoce GANHOU!!\n", soma);

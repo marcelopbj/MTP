@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main () 
 {
-   int n, soma=0;
+   int n, soma=0, i;
    printf("Informe o numero: ");
    scanf("%i", &n);
 
-   for (int i = 1; i<=n/2; i++)
+   for (i = 1; i<=n/2; i++)
    {
      if (n%i == 0)
 	 {
@@ -13,8 +13,8 @@ int main ()
 	 }
    }
    if (soma == n)
-	   printf ("\nO numero e perfeito\n");
+	   printf ("\ne perfeito\n");
    else
-	   printf ("\nO numero nao e perfeito\n");
+	   printf ("\nnao e perfeito\n");
    return 0;
 }

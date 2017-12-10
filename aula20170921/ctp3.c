@@ -4,16 +4,16 @@
 int main()
 {
 char frase[256];
-int letras=0;
+int letras=0, i;
 printf("Informe uma frase: ");
 fgets(frase,256,stdin);
-for(int i=0; frase[i]!='\0'; i++)
+for(i=0; frase[i]!='\0'; i++)
 {
 	if(isalpha(frase[i])!= 0)
 	{
 		letras++;
 	}
 }
-printf("\n %d\n",letras);
+printf("\n%d\n",letras);
 return 0;
 }

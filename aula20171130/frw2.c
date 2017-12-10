@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <conio.h>
-#include<iostream>
 #include <time.h>
 #include <math.h>
 
@@ -28,12 +27,13 @@ int main ()
 		break;
 	case 2:
 			system("cls");
+			int i;
 			printf("Informe o nome do arquivo: ");
 			scanf("%s", nome);
 			printf("Informe quantos numeros aleatorios quer acrescentar: ");
 			scanf("%d", &n);
 			arquivo = fopen (nome, "w");
-			for (int i=0; i<=n; i++)
+			for (i=0; i<=n; i++)
 			{
 				vet[i]=rand()%100;
 				fprintf(arquivo, "%d ",vet[i]);
@@ -42,17 +42,18 @@ int main ()
 			system("pause");
 		break;
 	case 3:
+
 		printf("Informe o nome do arquivo: ");
 		scanf("%s", nome);
 		arquivo = fopen(nome, "r");
-		for (int i=0; i<n; i++)
+		for (i=0; i<n; i++)
 		{
 			fscanf(arquivo, "%d ", &vet[i]);
 	
 		}
 		maior=vet[0];
 		menor=vet[0];
-		for (int i=0; i<n; i++)
+		for (i=0; i<n; i++)
 		{
 			soma=soma+vet[i];
 			if(vet[i]>maior)
@@ -61,14 +62,14 @@ int main ()
 				menor=vet[i];
 		}
 		media=soma/n;
-		for (int i=0; i<n; i++)
+		for (i=0; i<n; i++)
 		{
 			s=(vet[i]-media)*(vet[i]-media);
 		}
 		s=s/(n-1);
 		s=sqrt(s);
 		printf("Os numeros sao:");
-		for (int i=0; i<n;i++)
+		for (i=0; i<n;i++)
 		{
 			printf("%d ", vet[i]);
 		}

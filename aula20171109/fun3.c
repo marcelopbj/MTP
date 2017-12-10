@@ -2,8 +2,9 @@
 
 void calcula (int *a, int *b, int n, int m)
 {
-	for (int i=0; i<m;i++){
-		for (int j=0; j<n; j++){
+	int i,j;
+	for (i=0; i<m;i++){
+		for (j=0; j<n; j++){
 			if (b[i]==a[j])
 				printf("%d, ", b[i]);
 		}

@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <iostream>
 #include <math.h>
 
 void preenche(float * elemento);

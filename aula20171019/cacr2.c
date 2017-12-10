@@ -18,14 +18,14 @@ void maior(float delt, int a, int b) {
 void zero(int a, int b){
 	int x;
 	x=(-b)/(2*a);
-	printf("As raizes sao %d, %d\n", x, x);
+	printf("%d, %d\n", x, x);
 	getchar();
 }
 
 int main() {
 	int a,b,c;
 	float delt;
-    printf("Informes os coeficientes a,b e c da funcao: \n");
+    printf("Informes os coeficientes a,b e c da funcao: ");
     scanf("%d%d%d", &a, &b, &c);
 	delt=delta(a,b,c);
 	if (delt>0)

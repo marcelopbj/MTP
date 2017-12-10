@@ -13,6 +13,6 @@ while(x>=1)
 	fat=fat*x;
 	x--;
 }
-printf("\nFatorial: % "PRId64 "\n ", fat);
+printf("\n%"PRId64 "\n ", fat);
 return 0;
 }

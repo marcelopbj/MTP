@@ -14,6 +14,6 @@ scanf("%f", &d);
 printf("\nNota 5: ");
 scanf("%f", &e);
 total=(a*2 + b*2 + c*2 + d*3 + e*5)/14;
-printf("A nota final e: %f \n", total);
+printf("%f \n", total);
 return 0;
 }

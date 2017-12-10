@@ -4,9 +4,10 @@
 #include <string.h>
 
 void desenho(int l, int c) {
+	int i, j;
 	char caracteres[] = ": $ # $ : 4 b . ' :. : $ # $: 4b. ':.";
-	for(int i=0;i<=l;i++){
-		for(int j=0;j<=c;j++){
+	for(i=0;i<=l;i++){
+		for(j=0;j<=c;j++){
 			printf("%c", caracteres[rand()%strlen(caracteres)+1]);
 		
 		}

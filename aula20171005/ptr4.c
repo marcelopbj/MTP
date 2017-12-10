@@ -5,17 +5,17 @@
 int main()
 {
 srand(time(0));
-int vet[1000], num, cont=0;
+int vet[1000], num, cont=0, i;
 int bytes = sizeof(vet);
 unsigned char *pontvet;
-for (int i=0; i<1000;i++)
+for (i=0; i<1000;i++)
 {
 	vet[i]=rand()%1001;
 }
 pontvet= (unsigned char *) vet;
 printf("Informe um numero de 0 a 255");
 scanf("%d", &num);
-for (int i=0; i<bytes; i++)
+for (i=0; i<bytes; i++)
 {
 	if(vet[i]==num)
 	{

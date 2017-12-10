@@ -13,6 +13,6 @@ for(i=0; frase[i]!='\0'; i++)
 }
 i++;
 min[i]='\0';
-printf("\n %s",min);
+printf("\n%s",min);
 return 0;
 }

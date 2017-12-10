@@ -1,12 +1,14 @@
 #include <stdio.h>
 
 void impar() {
-	for (int i=1; i<=20; i+=2)
+	int i;
+	for (i=1; i<=20; i+=2)
 		printf("%d ", i);
 	getchar();
 }
 void par() {
-	for (int i=2; i<=20; i+=2)
+	int i;
+	for (i=2; i<=20; i+=2)
 		printf("%d ", i);
 	getchar();
 }

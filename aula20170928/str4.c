@@ -3,12 +3,12 @@
 
 int main()
 {
-int i;
+int i, j;
 char frase[256], maius[256], frase2[256];
 printf("Informe a frase:");
 fgets(frase,256,stdin);
 
-for(int j=0; frase[j]!='\0'; j++)
+for(j=0; frase[j]!='\0'; j++)
 {
 	maius[j]=toupper(frase[j]);
 }

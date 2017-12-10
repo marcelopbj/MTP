@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <iostream>
 int calcula(int num1, int num2, int den1, int den2, int *num, int *den) {
 	if(den1*den2==0)
 		return 1;
@@ -29,9 +28,9 @@ int mdc(int u, int v){
 int main() {
   int num1, num2, den1, den2, num, den, u, v;
   printf("Informe o numerador e o denonimador do 1 numero: ");
-  scanf("%d%d",&num1, &den1);
+  scanf("%d/%d",&num1, &den1);
   printf("Informe o numerador e o denonimador do 2 numero: ");
-  scanf("%d%d",&num2, &den2);
+  scanf("%d/%d",&num2, &den2);
   if (calcula(num1, num2, den1, den2, &num, &den) == 1)
 	  printf("erro!\n");
   else {
@@ -40,7 +39,6 @@ int main() {
 	  mdc(u,v);
 	  printf("%d/%d\n", num/mdc(u,v),den/mdc(u,v));
   }
-  system("pause");
   getchar();
   return 0;
 }

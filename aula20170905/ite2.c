@@ -11,6 +11,6 @@ while(p>=1)
 	result=result*b;
 	p--;
 }
-printf("\nResultado: %i \n", result);
+printf("\n%i \n", result);
 return 0;
 }

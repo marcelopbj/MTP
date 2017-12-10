@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <conio.h>
-#include<iostream>
 
 void cadastrar (){
 	system("cls");

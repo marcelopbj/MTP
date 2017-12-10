@@ -3,7 +3,6 @@
 int main()
 {
 int x, fat=1;
-printf("Informe o numero: ");
 scanf("%i", &x);
 
 while(x>=1)
@@ -11,6 +10,6 @@ while(x>=1)
 	fat=fat*x;
 	x--;
 }
-printf("\nFatorial: %i \n", fat);
+printf("\n%i \n", fat);
 return 0;
 }

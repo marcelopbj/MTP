@@ -5,10 +5,11 @@ int main()
 {
 srand(time(0));
 double p, naleatorio;
-int a=0;
+int a=0, i;
 printf("Informe a porcentagem: ");
 scanf("%lf",&p);
-for(int i=0; i<1000; i++)
+p=p*100;
+for(i=0; i<1000; i++)
 {
 	naleatorio=rand()% 100;
 	if(naleatorio<p)

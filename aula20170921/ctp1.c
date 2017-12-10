@@ -13,6 +13,6 @@ for(i=0; frase[i]!='\0'; i++)
 }
 i++;
 maius[i]='\0';
-printf("\n %s",maius);
+printf("\n%s",maius);
 return 0;
 }

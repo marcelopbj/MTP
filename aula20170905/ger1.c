@@ -20,9 +20,9 @@ int main()
     }
 
     if (flag == 1)
-		printf("%iE primo \n", n);
+		printf("primo \n");
     else
-		printf(" %iNao e primo \n", n);
+		printf("nao e primo \n");
 
     return 0;
 }
